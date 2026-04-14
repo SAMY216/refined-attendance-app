@@ -70,6 +70,7 @@ export default function App() {
     <div>
       {checkIn && <button>Check In</button>}
       {checkOut && <button>Check Out</button>}
+      <p className="text-4xl text-red-900 font-bold">Hello</p>
     </div>
   );
 }
