@@ -67,10 +67,19 @@ export default function App() {
   }, []);
 
   return (
-    <div>
-      {checkIn && <button>Check In</button>}
-      {checkOut && <button>Check Out</button>}
-      <p className="text-4xl text-red-900 font-bold">Hello</p>
+    <div className="p-4 md:px-8 lg:px-16">
+      <div className="flex items-center justify-center gap-4 md:gap-8 lg:gap-16">
+        {checkIn && (
+          <button className="py-3 px-6 bg-green-500 hover:bg-green-600 transition text-white rounded-lg font-bold text-lg cursor-pointer">
+            Check In
+          </button>
+        )}
+        {checkOut && (
+          <button className="py-3 px-6 bg-red-500 hover:bg-red-600 transition text-white rounded-lg font-bold text-lg cursor-pointer">
+            Check Out
+          </button>
+        )}
+      </div>
     </div>
   );
 }
