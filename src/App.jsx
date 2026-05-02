@@ -65,9 +65,9 @@ export default function App() {
   const [inRange, setInRange] = useState(false);
 
   // target location (replace with your location)
-  const targetLat = 30.144948108637983;
-  const targetLng = 31.394484697869892;
-
+  const targetLat = 30.144985598586622;
+  const targetLng = 31.394566388902778;
+  
   const getDistance = (lat1, lon1, lat2, lon2) => {
     const R = 6371e3;
     const toRad = (deg) => (deg * Math.PI) / 180;
